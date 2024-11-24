@@ -13,6 +13,7 @@ import NewsAdvertSection from "./components/NewsAdvertSection";
 import WelcomeSection from "./components/WelcomeSection";
 import FeaturedBusinesses from "./components/FeaturedBusiness";
 import Header from "./components/Header";
+import StorySlider from "./components/MomentCard";
 
 const App = () => {
   const [changingText, setChangingText] = useState("deals");
@@ -64,8 +65,8 @@ const App = () => {
           <button className="px-4 py-2 bg-blue-700 rounded">Sign Up</button>
         </div>
       </header> */}
-      <Header/>
-<WelcomeSection/>
+      <Header />
+      <WelcomeSection />
       {/* Welcome Section */}
       {/* <section className="text-center py-16 bg-white shadow-md">
         <h1 className="text-2xl font-bold mb-4">Welcome Boss</h1>
@@ -97,7 +98,7 @@ const App = () => {
 
       {/* Featured Cards Section */}
 
-      <NewsAdvertSection/>
+      <NewsAdvertSection loading={loading} />
       {/* <section className="py-8 bg-gray-100">
         <h2 className="text-xl font-bold text-center mb-4">
           Featured Businesses
@@ -120,7 +121,7 @@ const App = () => {
         )}
 
       </section> */}
-      <FeaturedBusinesses/>
+      <FeaturedBusinesses />
 
       {/* Featured Deals Section */}
       <section className="py-8 bg-white">
@@ -142,25 +143,8 @@ const App = () => {
           </Slider>
         )}
       </section>
-
+     
       {/* Featured Moments Section */}
-      <section className="py-8 bg-gray-100">
-        <h2 className="text-xl font-bold text-center mb-4">Featured Moments</h2>
-        {loading ? (
-          <SkeletonLoader width="100%" height="80px" className="mx-auto" />
-        ) : (
-          <Slider data={featuredMoments}>
-            {featuredMoments.map((moment, idx) => (
-              <MomentCard
-                key={idx}
-                image={moment.image}
-                isOpen={moment.isOpen}
-                name={moment.name}
-              />
-            ))}
-          </Slider>
-        )}
-      </section>
 
       {/* Footer */}
       <footer className="bg-blue-500 text-white py-4 text-center">

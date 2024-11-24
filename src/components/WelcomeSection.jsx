@@ -69,7 +69,7 @@ const WelcomeSection = () => {
   ];
 
   return (
-    <section className="h-[40vh] bg-gray-200 flex flex-col items-center justify-center space-y-6 p-4">
+    <section className="h-[40vh] bg-gray-200 flex flex-col items-center justify-center space-y-6 p-4 bg-[url('https://img.freepik.com/premium-photo/abstract-background-design-images-wallpaper-ai-generated_643360-134593.jpg')] bg-cover bg-center">
       <h1 className="text-3xl font-bold text-center text-white">
         Welcome Boss, find the best{" "}
         <span className="text-blue-500">{options[currentOption]}</span>
@@ -88,7 +88,11 @@ const WelcomeSection = () => {
           const Icon = option.icon; // Extract the icon component
           return (
             <button
-              onClick={option.id === 7 ?() => setIsDropdownOpen((prev) => !prev) : undefined}
+              onClick={
+                option.id === 7
+                  ? () => setIsDropdownOpen((prev) => !prev)
+                  : undefined
+              }
               key={option.id}
               className="flex items-center space-x-2 bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
             >
