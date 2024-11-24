@@ -6,7 +6,7 @@ const featuredCards = [
     title: "Plumbing Services",
     description:
       "Expert plumbing services for residential and commercial needs.",
-    contact: "08012345678",
+    contact: "0801***678",
   },
   {
     name: "BossTech Solutions",
@@ -14,7 +14,7 @@ const featuredCards = [
       "https://boss.tech/wp-content/uploads/2022/03/bosspower_transparent.png",
     title: "IT Experts",
     description: "We provide top-notch tech solutions.",
-    contact: "07098765432",
+    contact: "0709***5432",
   },
   {
     name: "Elite Plumbers",
@@ -23,7 +23,7 @@ const featuredCards = [
     title: "Plumbing Services",
     description:
       "Expert plumbing services for residential and commercial needs.",
-    contact: "08012345678",
+    contact: "0801***678",
   },
   {
     name: "BossTech Solutions",
@@ -31,7 +31,7 @@ const featuredCards = [
       "https://boss.tech/wp-content/uploads/2022/03/bosspower_transparent.png",
     title: "IT Experts",
     description: "We provide top-notch tech solutions.",
-    contact: "07098765432",
+    contact: "0709***5432",
   },
   {
     name: "BossTech Solutions",
@@ -39,7 +39,7 @@ const featuredCards = [
       "https://boss.tech/wp-content/uploads/2022/03/bosspower_transparent.png",
     title: "IT Experts",
     description: "We provide top-notch tech solutions.",
-    contact: "07098765432",
+    contact: "0709***5432",
   },
   {
     name: "Elite Plumbers",
@@ -48,7 +48,7 @@ const featuredCards = [
     title: "Plumbing Services",
     description:
       "Expert plumbing services for residential and commercial needs.",
-    contact: "08012345678",
+    contact: "0801***678",
   },
   {
     name: "BossTech Solutions",
@@ -56,7 +56,7 @@ const featuredCards = [
       "https://boss.tech/wp-content/uploads/2022/03/bosspower_transparent.png",
     title: "IT Experts",
     description: "We provide top-notch tech solutions.",
-    contact: "07098765432",
+    contact: "0709***5432",
   },
 ];
 
