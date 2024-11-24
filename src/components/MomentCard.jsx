@@ -423,7 +423,7 @@ const StorySlider = ({ featuredMoments }) => {
   }, [isModalOpen, isPaused, currentImageIndex, currentIndex]);
 
   return (
-    <div className="h-full flex flex-col w-[20%] gap-4">
+    <div className="h-full flex flex-row w-full gap-4">
       {/* Thumbnails */}
       {!isModalOpen &&
         featuredMoments.map((moment, idx) => (

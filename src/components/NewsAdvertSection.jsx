@@ -9,15 +9,6 @@ import featuredMoments from "../data/featuredMoments";
 const NewsAdvertSection = ({loading}) => {
   return (
     <div className="flex flex-row px-2 justify-evenly">
-      <section className="py-8 border-r-2  shadow-md w-[20%] h-full">
-        <h2 className="text-xl font-bold text-left mb-4">Featured Moments</h2>
-        {loading ? (
-          <SkeletonLoader width="100%" height="80px" className="mx-auto" />
-        ) : (
-          <StorySlider featuredMoments={featuredMoments} />
-        )}
-      </section>
-
       <section className="py-8  text-blue-500">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -81,6 +72,14 @@ const NewsAdvertSection = ({loading}) => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="py-8 border-r-2  shadow-md w-[20%] h-full mt-20">
+        <h2 className="text-xl font-bold text-left mb-4">Featured Moments</h2>
+        {loading ? (
+          <SkeletonLoader width="100%" height="80px" className="mx-auto" />
+        ) : (
+          <StorySlider featuredMoments={featuredMoments} />
+        )}
       </section>
     </div>
   );

@@ -17,12 +17,12 @@ const Header = () => {
   return (
     <header
       className={`text-white p-4 flex justify-between items-center ${
-        !loggedIn ? "bg-blue-200 text-white" : "bg-white text-blue-500"
+        !loggedIn ? "bg-white " : "bg-white text-blue-500"
       }`}
     >
       {/* <div className={`text-lg font-bold ${!loggedIn ? 'text-white' : 'text-blue-500'}`}>Bosspace</div> */}
       <ImageWrapper src={logo} width={100} height={20}/>
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 text-blue-500">
         <a href="#about" className="hover:underline">
           About Us
         </a>

@@ -14,6 +14,7 @@ import WelcomeSection from "./components/WelcomeSection";
 import FeaturedBusinesses from "./components/FeaturedBusiness";
 import Header from "./components/Header";
 import StorySlider from "./components/MomentCard";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [changingText, setChangingText] = useState("deals");
@@ -147,11 +148,12 @@ const App = () => {
       {/* Featured Moments Section */}
 
       {/* Footer */}
-      <footer className="bg-blue-500 text-white py-4 text-center">
+      {/* <footer className="bg-blue-500 text-white py-4 text-center">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Bosspace. All Rights Reserved.
         </p>
-      </footer>
+      </footer> */}
+      <Footer/>
     </div>
   );
 };
