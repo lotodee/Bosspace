@@ -8,7 +8,7 @@ const FeaturedBusinesses = ({ loading }) => {
   return (
     <section className="py-8 bg-gray-100 ">
       <h2 className="text-xl font-bold text-center mb-4">
-        Featured Businesses
+        Featured Cards
       </h2>
       {loading ? (
         <SkeletonLoader width="100%" height="200px" className="mx-auto" />
