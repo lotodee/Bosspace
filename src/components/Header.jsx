@@ -16,20 +16,24 @@ const Header = () => {
 
   return (
     <header
-      className={`text-white p-4 flex justify-between items-center ${
-        !loggedIn ? "bg-white " : "bg-white text-blue-500"
+      className={` p-4 flex justify-between items-center shadow-lg top-0 sticky z-50 text-custom_blue ${
+        !loggedIn ? "bg-white " : "bg-white "
       }`}
     >
-      {/* <div className={`text-lg font-bold ${!loggedIn ? 'text-white' : 'text-blue-500'}`}>Bosspace</div> */}
-      <ImageWrapper src={logo} width={100} height={20}/>
-      <div className="flex space-x-4 text-blue-500">
+      <div
+        className={`text-lg font-bold text-[40px] text-custom_blue`}
+      >
+        Bosspace
+      </div>
+      {/* <ImageWrapper src={logo} width={180} height={40}/> */}
+      {/* <div className="flex space-x-4 ">
         <a href="#about" className="hover:underline">
           About Us
         </a>
         <a href="#list" className="hover:underline">
           List
         </a>
-      </div>
+      </div> */}
       {loggedIn && (
         <div>
           <ProfileBar />
@@ -39,7 +43,7 @@ const Header = () => {
       <div>
         {!loggedIn && (
           <button
-            className={`px-4 py-2 bg-white text-blue-500 rounded mr-2`}
+            className={`px-4 py-2 bg-white  rounded mr-2`}
             onClick={handleLogin}
           >
             Login
@@ -48,14 +52,14 @@ const Header = () => {
 
         {loggedIn && (
           <button
-            className="px-4 py-2  bg-blue-700  rounded mr-2"
+            className="px-4 py-2  bg-custom_blue  rounded mr-2 text-white"
             onClick={handleLogout}
           >
             Logout
           </button>
         )}
         {!loggedIn && (
-          <button className="px-4 py-2 bg-blue-700 rounded">Sign Up</button>
+          <button className="px-4 py-2 bg-custom_blue rounded text-white">Sign Up</button>
         )}
       </div>
     </header>

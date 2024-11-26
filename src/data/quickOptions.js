@@ -1,13 +1,15 @@
-import { FaCar, FaBriefcase, FaHome, FaUserTie, FaTools, FaBook,FaHamburger } from 'react-icons/fa';
+import { FaCar, FaBriefcase, FaHome , FaTools,FaHamburger } from 'react-icons/fa';
 
 const quickOptions = [
-  { id: 1, icon: FaCar, text: 'Vehicles' },
-  { id: 2, icon: FaBriefcase, text: 'Jobs' },
-  { id: 3, icon: FaHome, text: 'Real Estate' },
-  { id: 4, icon: FaUserTie, text: 'Experts' },
-  { id: 5, icon: FaTools, text: 'Deals' },
-  { id: 6, icon: FaBook, text: 'E-Courses' },
-  { id: 7, icon: FaHamburger, text: 'More' },
+  { id: 1, icon: FaHome, text: "Business Cards" },
+  { id: 2, icon: FaCar, text: "Business Pages" },
+  { id: 3, icon: FaCar, text: "Deals" },
+  { id: 4, icon: FaBriefcase, text: "Jobs" },
+  { id: 5, icon: FaHome, text: "Properties" },
+
+  { id: 6, icon: FaTools, text: "E-shops" },
+
+  { id: 7, icon: FaHamburger, text: "More" },
 ];
 
 export default quickOptions;

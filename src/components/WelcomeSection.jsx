@@ -22,21 +22,21 @@ const WelcomeSection = () => {
   ];
 
   return (
-    <section className="h-[40vh] bg-gray-200 flex flex-col items-center justify-center space-y-6 p-4 bg-[url('https://img.freepik.com/premium-photo/abstract-background-design-images-wallpaper-ai-generated_643360-134593.jpg')] bg-cover bg-center">
+    <section className="h-[40vh] flex flex-col items-center justify-center space-y-6 p-4 bg-[url('https://img.freepik.com/premium-photo/abstract-background-design-images-wallpaper-ai-generated_643360-134593.jpg')] bg-cover bg-center">
       <h1 className="text-2xl md:text-3xl font-bold text-center text-white">
         Welcome Boss, find the best{" "}
         <span className="text-blue-500">{options[currentOption]}</span>
       </h1>
-      <div className="flex items-center w-full md:w-[60%] bg-white p-4 rounded-lg shadow-lg">
-        <FiSearch className="text-gray-500 mr-2" />
+      <div className="flex items-center w-full md:w-[60%] bg-white p-4 rounded-lg shadow-lg border-2 border-custom_pink">
+        <FiSearch className="text-custom_blue mr-2" />
         <input
           type="text"
           placeholder="Search..."
-          className="flex-1 outline-none text-gray-600"
+          className="flex-1 outline-none text-gray-600 "
         />
-        <FiFilter className="text-gray-500 ml-2 cursor-pointer" />
+        <FiFilter className="text-custom_blue ml-2 cursor-pointer" />
       </div>
-      <div className="flex flex-wrap justify-center space-x-2 md:space-x-4">
+      <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 text-custom_pink">
         {quickOptions.map((option) => {
           const Icon = option.icon;
           return (
@@ -47,10 +47,10 @@ const WelcomeSection = () => {
                   : undefined
               }
               key={option.id}
-              className="flex items-center space-x-2 bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+              className="flex items-center space-x-2  px-4 py-2 rounded hover:bg-gray-300"
             >
               <Icon className="text-lg" />
-              <span>{option.text}</span>
+              <span className="text-white">{option.text}</span>
             </button>
           );
         })}

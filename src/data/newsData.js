@@ -5,7 +5,7 @@ const newsData = [
     description:
       "Explore the latest breakthroughs in AI and robotics shaping the future.",
     image:
-      "https://assets.bizclikmedia.net/1200/4365470311169bf8fe087a1fddda7011:859f9d642788b11469d31436080b3583/technology-dec23-top10-website-image3.jpg",
+      "https://img.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg",
     link: "#",
   },
   {
@@ -13,7 +13,8 @@ const newsData = [
     title: "Global Market Trends",
     description:
       "Insights into the 2024 economic landscape and what to expect.",
-    image: "https://cdn.mos.cms.futurecdn.net/jRneZaZKpzWRWFPAmjoaMR.jpg",
+    image:
+      "https://hbr.org/resources/images/article_assets/2020/11/Nov20_09_2729791.jpg",
     link: "#",
   },
   {
@@ -21,7 +22,7 @@ const newsData = [
     title: "Startup Success Stories",
     description: "Learn how small businesses are scaling globally.",
     image:
-      "https://todayafrica.co/wp-content/uploads/2024/02/Blue-Simple-Dad-Appreciation-Facebook-Post-1200-%C3%97-720-px-23-1-872x547.png",
+      "https://images.pexels.com/photos/3153201/pexels-photo-3153201.jpeg?cs=srgb&dl=pexels-canvastudio-3153201.jpg&fm=jpg",
     link: "#",
   },
 ];

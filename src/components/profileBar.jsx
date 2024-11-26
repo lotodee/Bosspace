@@ -6,15 +6,21 @@ import professionals from '../assets/icons/professionals.svg'
 import resume from '../assets/icons/resume.svg'
 import jobs from '../assets/icons/jobs.svg'
 import ImageWrapper from './ImageWrapper'
+import Cards from '../assets/icons/Cards'
+import Deals from '../assets/icons/Deals'
+import Eshop from '../assets/icons/Eshop'
+import Professionals from '../assets/icons/Professionals'
+import Resume from '../assets/icons/Resume'
+import Jobs from '../assets/icons/Jobs'
 const ProfileBar = () => {
   return (
     <div className="text-black flex flex-row gap-8 items-center">
-      <ImageWrapper src={cards} width={25} height={25} name="Cards"/>
-      <ImageWrapper src={deals} width={25} height={25} name="Deals" />
-      <ImageWrapper src={eshop} width={25} height={25}  name="E-Shop"/>
-      <ImageWrapper src={professionals} width={25} height={25}  name="Experts"/>
-      <ImageWrapper src={resume} width={25} height={25} name="Resume" />
-      <ImageWrapper src={jobs} width={25} height={25} name="Jobs" />
+      <ImageWrapper  icon={<Cards/>}  name="Cards"/>
+      <ImageWrapper  icon={<Deals/>}  name="Deals" />
+      <ImageWrapper  icon={<Eshop/>}   name="E-Shop"/>
+      <ImageWrapper  icon={<Professionals/>}   name="Experts"/>
+      <ImageWrapper  icon={<Resume/>}  name="Resume" />
+      <ImageWrapper  icon={<Jobs/>}  name="Jobs" />
     </div>
   );
 }
