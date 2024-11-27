@@ -19,7 +19,7 @@ const BusinessCard = ({ name, picture, title, description, contact }) => {
       >
         {}
         {!flipped ? (
-          <div className="absolute   mx-2 inset-0 flex flex-col border shadow-lg items-center justify-center text-center backface-hidden p-4">
+          <div className="absolute border   mx-[10px] inset-0 flex flex-col border-customGray border-2 shadow-lg items-center justify-center text-center backface-hidden p-4">
             <img
               src={picture}
               alt={name}
@@ -42,7 +42,7 @@ const BusinessCard = ({ name, picture, title, description, contact }) => {
               transform: "rotateY(180deg)", 
             }}
           >
-            <p className="text-lg text-gray-200 mb-4">{description}</p>
+            <p className="text-[15px] text-gray-200 mb-4">{description}</p>
 
             <div className="text-center mb-4">
               <p className="text-sm font-semibold">Contact:</p>

@@ -118,7 +118,7 @@ const NewsAdvertSection = () => {
   );
 
   return (
-    <div className="px-4 space-y-8 bg-custom_blue h-screen">
+    <div className="px-4 space-y-8 bg-custom_blueW  rounded-lg ">
 
     <News visibleNews={visibleNews}/>
 

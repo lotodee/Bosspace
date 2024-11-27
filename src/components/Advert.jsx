@@ -3,8 +3,8 @@ import React from 'react'
 const Advert = ({visibleAdverts}) => {
   return (
     <section className="text-blue-500">
-      <h3 className="text-2xl font-bold mb-6 text-white border-b-2 border-gray-300 pb-2">
-       Advert
+      <h3 className="text-2xl font-bold mb-6 text-custom_blue border-b-2 border-custom_pink  pb-2">
+        Advert
       </h3>
 
       <div className="grid grid-cols-2 gap-4">

@@ -6,6 +6,8 @@ import featuredDeals from "../data/featuredDeals";
 import WelcomeSection from "../components/WelcomeSection";
 import FeaturedBusinesses from "../components/FeaturedBusiness";
 import DealCardSkeleton from "../components/Skeletons/DealCardSkeleton";
+import FeaturedDeals from "../components/FeaturedDeals";
+import Others from "../components/Others/Others";
 
 const MiddleSection = () => {
   const [changingText, setChangingText] = useState("deals");
@@ -20,6 +22,7 @@ const MiddleSection = () => {
   ];
 
   // Simulate loading
+
   useEffect(() => {
     setTimeout(() => setLoading(false), 2000);
   }, []);
@@ -39,35 +42,23 @@ const MiddleSection = () => {
 
   return (
     <div className="min-h-screen  text-blue-500">
-
       {/* <Header /> */}
       <WelcomeSection />
-{/* 
+
+      <div className="border-b-4 border-t-4  w-fit mx-auto mb-6 my-8">
+        <h2 className="text-2xl font-extrabold text-custom_blue border-b-2 border-t-2 border-custom_pink   tracking-wide text-center uppercase">
+          Featured LISTINGS
+        </h2>
+      </div>
+      {/* 
       <NewsAdvertSection loading={loading} /> */}
 
-          <FeaturedBusinesses  loading={loading}  />
-
+      <FeaturedBusinesses loading={loading} />
 
       {/* Featured Deals Section */}
-      <section className="py-8 bg-white">
-        <h2 className="text-xl font-bold text-center mb-4">Featured Deals</h2>
-        {loading ? (
-          <DealCardSkeleton data={featuredDeals} />
-        ) : (
-          <Slider data={featuredDeals}>
-            {featuredDeals.map((deal, idx) => (
-              <DealCard
-                key={idx}
-                title={deal.title}
-                description={deal.description}
-                price={deal.price}
-                endTime={deal.endTime}
-                tag={deal.tag}
-              />
-            ))}
-          </Slider>
-        )}
-      </section>
+      <FeaturedDeals loading={loading} featuredDeals={featuredDeals} />
+
+
 
     
     </div>

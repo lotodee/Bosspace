@@ -18,7 +18,7 @@ const LeftSide = () => {
             </button>
           </div>
             </div>
-            <MetricsSection/>
+            {/* <MetricsSection/> */}
       </div>
     );
 };

@@ -41,7 +41,7 @@ import React from "react";
 const News = ({ visibleNews }) => {
   return (
     <section className="text-gray-900 ">
-      <h3 className="text-2xl font-bold mb-6 text-white border-b-2 border-gray-300 pb-2">
+      <h3 className="text-2xl font-bold mb-6 text-custom_blue border-b-2 border-custom_pink pb-2">
         Latest News
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

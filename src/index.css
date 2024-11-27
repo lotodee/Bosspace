@@ -12,5 +12,9 @@
           -ms-overflow-style: none;  /* IE and Edge */
           scrollbar-width: none;  /* Firefox */
     }
-    
+
   }
+
+  * {
+  font-family: 'work-sans', sans-serif;  /* Apply Montserrat globally */
+}
