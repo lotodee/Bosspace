@@ -19,6 +19,16 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "work-sans", "sans-serif"], // Add Montserrat
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+        "fade-in": "fadeIn 0.3s ease-in-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
     },
   },
   plugins: [],

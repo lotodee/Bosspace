@@ -3,8 +3,8 @@ import MetricsSection from "../components/Metrics";
 
 const LeftSide = () => {
     return (
-      <div>
-        <div className="bg-gradient-to-r from-custom_blue to-custom_grey text-white p-8 rounded-lg shadow-md">
+      <div className="h-40vh">
+        <div className="bg-gradient-to-r from-[#9b113a] to-custom_blue_sec text-white p-8 rounded-sm shadow-md">
           <div className="flex flex-col items-center justify-center text-center space-y-4">
             <h1 className="text-4xl font-extrabold uppercase tracking-wider">
               Become a Boss
@@ -13,12 +13,12 @@ const LeftSide = () => {
               Take charge, create your empire, and redefine your future. This is
               your moment to shine!
             </p>
-            <button className="mt-4 px-6 py-3 bg-white text-orange-500 font-semibold rounded-full shadow hover:bg-orange-500 hover:text-white transition-all duration-300">
+            <button className="mt-4 px-6 py-3 bg-white text-custom_blue font-semibold rounded-md shadow hover:bg-custom_blue hover:text-white transition-all duration-300">
               Start Creating
             </button>
           </div>
-            </div>
-            {/* <MetricsSection/> */}
+        </div>
+        {/* <MetricsSection/> */}
       </div>
     );
 };

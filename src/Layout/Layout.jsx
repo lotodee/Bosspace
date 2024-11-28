@@ -46,7 +46,7 @@ function Layout() {
       <Header />
 
       <div className="grid grid-cols-[15%_65%_20%] h-screen">
-        <div className="p-4">
+        <div className="p-4 h-40vh">
           <LeftSide />
         </div>
 

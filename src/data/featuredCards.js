@@ -7,6 +7,8 @@ const featuredCards = [
     description:
       "Expert plumbing services for residential and commercial needs.",
     contact: "0801***678",
+
+    linkedInUrl: "https://linkedin.com/in/janedoe",
   },
   {
     name: "BossTech Solutions",
@@ -15,6 +17,7 @@ const featuredCards = [
     title: "IT Experts",
     description: "We provide top-notch tech solutions.",
     contact: "0709***5432",
+    linkedInUrl: "https://linkedin.com/in/janedoe",
   },
   {
     name: "Elite Plumbers",
@@ -24,6 +27,7 @@ const featuredCards = [
     description:
       "Expert plumbing services for residential and commercial needs.",
     contact: "0801***678",
+    linkedInUrl: "https://linkedin.com/in/janedoe",
   },
   {
     name: "BossTech Solutions",
@@ -31,6 +35,7 @@ const featuredCards = [
       "https://boss.tech/wp-content/uploads/2022/03/bosspower_transparent.png",
     title: "IT Experts",
     description: "We provide top-notch tech solutions.",
+    linkedInUrl: "https://linkedin.com/in/janedoe",
     contact: "0709***5432",
   },
   {
@@ -39,6 +44,7 @@ const featuredCards = [
       "https://boss.tech/wp-content/uploads/2022/03/bosspower_transparent.png",
     title: "IT Experts",
     description: "We provide top-notch tech solutions.",
+    linkedInUrl: "https://linkedin.com/in/janedoe",
     contact: "0709***5432",
   },
   {
@@ -48,6 +54,7 @@ const featuredCards = [
     title: "Plumbing Services",
     description:
       "Expert plumbing services for residential and commercial needs.",
+    linkedInUrl: "https://linkedin.com/in/janedoe",
     contact: "0801***678",
   },
   {
@@ -56,6 +63,7 @@ const featuredCards = [
       "https://boss.tech/wp-content/uploads/2022/03/bosspower_transparent.png",
     title: "IT Experts",
     description: "We provide top-notch tech solutions.",
+    linkedInUrl: "https://linkedin.com/in/janedoe",
     contact: "0709***5432",
   },
 ];

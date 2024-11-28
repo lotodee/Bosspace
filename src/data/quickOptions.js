@@ -1,6 +1,6 @@
 import {
-  FaRegAddressCard,
-  FaLaptop,
+  FaAddressCard, 
+  FaLaptopCode,
   FaTags,
   FaBriefcase,
   FaHome,
@@ -9,13 +9,15 @@ import {
 } from "react-icons/fa";
 
 const quickOptions = [
-  { id: 1, icon: FaRegAddressCard, text: "Business Cards" }, 
-  { id: 2, icon: FaLaptop, text: "Business Pages" }, 
-  { id: 3, icon: FaTags, text: "Deals" }, 
-  { id: 4, icon: FaBriefcase, text: "Jobs" }, 
-  { id: 5, icon: FaHome, text: "Properties" }, 
-  { id: 6, icon: FaStore, text: "E-shops" }, 
-  { id: 7, icon: FaHamburger, text: "More" }, 
+  { id: 1, icon: FaAddressCard, text: "Business Cards" },
+  { id: 2, icon: FaLaptopCode, text: "Business Pages" },
+  { id: 3, icon: FaStore, text: "E-shops" },
+
+  { id: 5, icon: FaTags, text: "Deals" },
+  { id: 4, icon: FaBriefcase, text: "Jobs" },
+  { id: 6, icon: FaHome, text: "Properties" },
+
+  { id: 7, icon: FaHamburger, text: "More" },
 ];
 
 export default quickOptions;
