@@ -1,28 +1,74 @@
-import React from 'react'
-import cards from '../assets/icons/cards.svg'
-import deals from '../assets/icons/deals.svg'
-import eshop from '../assets/icons/eShop.svg'
-import professionals from '../assets/icons/professionals.svg'
-import resume from '../assets/icons/resume.svg'
-import jobs from '../assets/icons/jobs.svg'
-import ImageWrapper from './ImageWrapper'
-import Cards from '../assets/icons/Cards'
-import Deals from '../assets/icons/Deals'
-import Eshop from '../assets/icons/Eshop'
-import Professionals from '../assets/icons/Professionals'
-import Resume from '../assets/icons/Resume'
-import Jobs from '../assets/icons/Jobs'
+import React from "react";
+import {
+  FaPen,
+  FaComments,
+  FaRocket,
+  FaRegAddressBook,
+  FaLink,
+} from "react-icons/fa";
+import IconWithText from "./IconWithText";
+import useTabStore from "../store/useTabStore";
+import { useNavigate } from "react-router-dom";
 const ProfileBar = () => {
+  const { currentTab, setCurrentTab } = useTabStore();
+ const navigate = useNavigate(); 
+
+
+
+  const navigator = (tab) => {
+
+
+    if (tab === "Directory") {
+      navigate('/')
+      return
+    }
+    if (tab === 'Blogs and Articles') {
+      navigate('/blog')
+      return
+    } else {
+      navigate(`/${tab}`)
+    }
+    return;
+  }
+  const handleItemClick = (tab) => {
+    setCurrentTab(tab);
+    navigator(tab);
+  };
+
   return (
-    <div className="text-black flex flex-row gap-8 items-center">
-      <ImageWrapper  icon={<Cards/>}  name="Cards"/>
-      <ImageWrapper  icon={<Deals/>}  name="Deals" />
-      <ImageWrapper  icon={<Eshop/>}   name="E-Shop"/>
-      <ImageWrapper  icon={<Professionals/>}   name="Experts"/>
-      <ImageWrapper  icon={<Resume/>}  name="Resume" />
-      <ImageWrapper  icon={<Jobs/>}  name="Jobs" />
+    <div className="flex justify-center items-center space-x-8">
+      <IconWithText
+        icon={<FaPen />}
+        text="Blogs and Articles"
+        isActive={currentTab === "Blogs and Articles"}
+        handleClick={() => handleItemClick("Blogs and Articles")}
+      />
+      <IconWithText
+        icon={<FaComments />}
+        text="Forums"
+        isActive={currentTab === "Forums"}
+        handleClick={() => handleItemClick("Forums")}
+      />
+      <IconWithText
+        icon={<FaRocket />}
+        text="Startup"
+        isActive={currentTab === "Startup"}
+        handleClick={() => handleItemClick("Startup")}
+      />
+      <IconWithText
+        icon={<FaRegAddressBook />}
+        text="Directory"
+        isActive={currentTab === "Directory"}
+        handleClick={() => handleItemClick("Directory")}
+      />
+      <IconWithText
+        icon={<FaLink />}
+        text="Connect"
+        isActive={currentTab === "Connect"}
+        handleClick={() => handleItemClick("Connect")}
+      />
     </div>
   );
-}
+};
 
-export default ProfileBar
+export default ProfileBar;

@@ -31,12 +31,12 @@ const DealCard = ({ title, description, price, endTime, tag, imageUrl }) => {
       className={`w-72 bg-white shadow-2xl rounded-lg overflow-hidden border-2 border-transparent transition-all duration-300 transform hover:scale-105 hover:${color} flex flex-col`}
     >
       {/* Image */}
-      {imageUrl && (
+      {/* {imageUrl && (
         <div
           className="h-40 w-full bg-cover bg-center"
           style={{ backgroundImage: `url(${imageUrl})` }}
         />
-      )}
+      )} */}
 
       {/* Tag */}
       <div

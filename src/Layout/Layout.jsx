@@ -1,67 +1,29 @@
-// import { Outlet } from "react-router-dom";
-// import WelcomeSection from "../components/WelcomeSection";
-// import Header from "../components/Header";
-// import RightSide from "../RightSide/RightSide";
-// import LeftSide from "../LeftSIde/LeftSide";
-// import Footer from "../components/Footer";
-
-// function Layout() {
-//     return (
-//       <div className="flex flex-col">
-//         <Header />
-
-//         <div className="grid grid-cols-[10%_65%_25%] h-screen">
-//           <div className=" p-4">
-//             <LeftSide />
-//           </div>
-
-//           <div className=" p-4 flex flex-col">
-//             <div>
-//               <Outlet />
-//             </div>
-//           </div>
-
-//           <div className=" p-4">
-//             <RightSide />
-//           </div>
-//         </div>
-//         {/* <Footer /> */}
-//       </div>
-//     );
-// }
-
-// export default Layout;
-
-
 import { Outlet } from "react-router-dom";
-import WelcomeSection from "../components/WelcomeSection";
 import Header from "../components/Header";
 import RightSide from "../RightSide/RightSide";
 import LeftSide from "../LeftSIde/LeftSide";
-import Footer from "../components/Footer";
 
 function Layout() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col h-screen overflow-hidden">
       <Header />
 
-      <div className="grid grid-cols-[15%_65%_20%] h-screen">
-        <div className="p-4 h-40vh">
+      <div className="relative flex flex-1 mt-4">
+        {/* Left Section */}
+        <div className="fixed top-16 bottom-0 left-0 mt-6 w-[22%] p-4 overflow-y-auto bg-white">
           <LeftSide />
         </div>
 
-        <div className="p-4 flex flex-col">
-          <div>
-            <Outlet />
-          </div>
+        {/* Main Content */}
+        <div className="flex-1 ml-[22%] mr-[22%] pb-10  overflow-y-auto border h-full no-scrollbar max-h-screen">
+          <Outlet />
         </div>
 
-        <div className="p-4">
+        {/* Right Section */}
+        <div className="fixed top-16 bottom-0 right-0 w-[22%] p-4 mt-6 overflow-y-auto bg-white">
           <RightSide />
         </div>
       </div>
-
-      {/* <Footer /> */}
     </div>
   );
 }

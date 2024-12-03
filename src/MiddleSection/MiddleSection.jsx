@@ -8,7 +8,8 @@ import FeaturedBusinesses from "../components/FeaturedBusiness";
 import DealCardSkeleton from "../components/Skeletons/DealCardSkeleton";
 import FeaturedDeals from "../components/FeaturedDeals";
 import Others from "../components/Others/Others";
-
+import StorySlider from "../components/MomentCard";
+import featuredMoments from '../data/featuredMoments';
 const MiddleSection = () => {
   const [changingText, setChangingText] = useState("deals");
   const [loading, setLoading] = useState(true);
@@ -41,7 +42,7 @@ const MiddleSection = () => {
   }, []);
 
   return (
-    <div className="min-h-screen  text-blue-500">
+    <div className=" text-blue-500">
       {/* <Header /> */}
       <WelcomeSection />
 
@@ -50,14 +51,13 @@ const MiddleSection = () => {
           Featured LISTINGS
         </h2>
       </div>
-      {/* 
-      <NewsAdvertSection loading={loading} /> */}
+    
 
       <FeaturedBusinesses loading={loading} />
 
-      {/* Featured Deals Section */}
+      
       <FeaturedDeals loading={loading} featuredDeals={featuredDeals} />
-
+{/* <StorySlider featuredMoments={featuredMoments}/> */}
 
 
     

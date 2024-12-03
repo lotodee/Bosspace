@@ -15,7 +15,7 @@ const quickOptions = [
 
   { id: 5, icon: FaTags, text: "Deals" },
   { id: 4, icon: FaBriefcase, text: "Jobs" },
-  { id: 6, icon: FaHome, text: "Properties" },
+  
 
   { id: 7, icon: FaHamburger, text: "More" },
 ];

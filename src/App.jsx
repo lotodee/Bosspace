@@ -5,6 +5,10 @@ import featuredDeals from "./data/featuredDeals";
 import { useEffect, useState } from "react";
 import Others from "./components/Others/Others";
 import Footer from "./components/Footer";
+import BlogPage from "./pages/blog-page/BlogPage";
+import Forums from "./pages/forums/Forums";
+import Startup from "./pages/startup/Startup";
+import Connect from "./pages/connect/Connect";
 
 
 function App() {
@@ -21,6 +25,10 @@ function App() {
 
           <Route path="/" element={<Layout />}>
             <Route index element={<MiddleSection />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/Forums" element={<Forums />} />
+            <Route path="/Startup" element={<Startup/>} />
+            <Route path="/Connect" element={<Connect />} />
           </Route>
 
       
@@ -29,17 +37,11 @@ function App() {
         </Routes>
       </Router>
 
-      
-      <div className="my-[300px]">
-        <Others loading={loading} featuredDeals={featuredDeals} />
-        <Others loading={loading} featuredDeals={featuredDeals} />
-        <Others loading={loading} featuredDeals={featuredDeals} />
-      </div>
+     
+  
 
       {/* Footer */}
-      <div className="fixed bottom-0 w-full">
-        <Footer />
-      </div>
+
     </div>
   );
 }
